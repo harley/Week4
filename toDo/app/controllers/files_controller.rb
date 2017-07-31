@@ -1,7 +1,7 @@
 class FilesController < ApplicationController
 
   def index
-    @files = Dir["app/assets/*"]
+    @files = Dir["app/assets/List/*.md"]
   end
 
 end

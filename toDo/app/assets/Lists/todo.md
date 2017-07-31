@@ -1,0 +1,8 @@
+- [ ]Learn Varibles.
+- [ ]Learn Proc.
+- [ ]Learn Hash.
+- [ ]Learn Methods.
+- [x]Learn Class.
+- [ ]Learn Rails.
+- [ ]Learn Ruboto.
+- [ ]Learn Hanami
