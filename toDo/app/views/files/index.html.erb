@@ -1,0 +1,41 @@
+
+<h1 id="heading">Hello List</h1> 
+ <div class="list-box">
+   <div style="font-weight: bold; margin-left: 5px">Today</div>
+   <div class="items">
+     <ul>
+       <%@files.each do |file| %>
+          <li class="file"><%= link_to file%></li>
+       <% end %>
+      </ul>
+   </div> 
+   <!--
+   <form class="new-item" action="submit" method="post">
+     <input value="1" type="hidden" name="id"/>
+     <input class="add-item" type="text" placeholder="Add an item..." />
+     <button class="btn">Save</button> 
+   </form>   -->
+</div>
+
+<div class="list-box">
+   <div style="font-weight: bold; margin-left: 5px">Tomorrow</div>
+   <div class="list-item">
+     <ul>
+       <%@files.each do |file| %>
+          <li class="file"><%= link_to file%></li>
+       <% end %>
+      </ul>
+   </div> 
+</div>
+
+
+
+<!--
+<ul>
+  <%@files.each do |file| %>
+    <li class="file"><%= link_to file%></li>
+  <% end %>
+</ul>
+-->
+
+

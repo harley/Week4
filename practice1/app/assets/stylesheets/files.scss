@@ -1,0 +1,22 @@
+// Place all the styles related to the files controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul {  
+    margin: 0.75em 0;  
+    padding: 0 1em;  
+    list-style: none;  
+}  
+li:before {   
+    content: "";  
+    border-color: transparent #008eef;  
+    border-style: solid;  
+    border-width: 0.35em 0 0.35em 0.45em;  
+    display: block;  
+    height: 0;  
+    width: 0;  
+    left: -1em;  
+    top: 0.9em;  
+    position: relative;  
+} 
+

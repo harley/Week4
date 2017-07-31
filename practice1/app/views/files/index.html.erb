@@ -1,0 +1,6 @@
+
+<ul>
+ <% @files.each  do |file|  %>
+  <li class="file"><%=link_to file, files_path(next: file) %></li>
+ <%end%>
+</ul>
