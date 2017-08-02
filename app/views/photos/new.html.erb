@@ -1,0 +1,16 @@
+<h1>Photos#new</h1>
+<p>Find me in app/views/photos/new.html.erb</p>
+
+<div style="width: 400px">
+<%= form_for @photo do |f| %>
+  <div class="form-group">
+    <%= f.label :username %>
+    <%= f.text_field :username, placeholder: "Username...", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :url %>
+    <%= f.text_field :url, placeholder: "URL...", class: "form-control" %>
+  </div>
+  <%= f.submit "Upload", class: "btn btn-danger"%>
+<% end %>
+</div>
