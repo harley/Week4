@@ -1,25 +1,44 @@
-<h1>My Menu</h1>
+<h1>My Options</h1>
 
-
+<!--
 <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center">Logo</a>
-      <ul class="left hide-on-med-and-down">
+    <div class="nav-wrapper teal lighten-2">
+      <ul class="hide-on-med-and-down">
         <% @category.each do |cat| %>
-          <li><a>
+            <li><a>
             <%= cat.name %>
-         </a></li>
+            </a></li>
+         <% end %>
+      </ul>
+    </div>
+  </nav>
+
+-->
+
+<nav class="nav-extended teal lighten-2">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a><%= link_to "Home" , root_path %></a></li>
+        <li><a><%= link_to "About" , cart_path %></a></li>
+        <li><a><%= link_to "Find us" , cart_path %></a></li>
+      </ul>
+    </div>
+
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <% @category.each do |cat| %>
+        <li class="tab"><a href="#">
+          <%= cat.name %>
+        </a></li>
          <% end %>
       </ul>
     </div>
   </nav>
 
 
-
-<ul>
- <% @category.each do |cat| %>
-   <li>
-     <%= cat.name %>
-   </li> 
- <% end %>
-</ul>
+  <div id="test1" class="col s12">Test 1</div>
+  <div id="test2" class="col s12">Test 2</div>
+  <div id="test3" class="col s12">Test 3</div>
+  <div id="test4" class="col s12">Test 4</div>
