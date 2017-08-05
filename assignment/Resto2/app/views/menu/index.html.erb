@@ -1,5 +1,21 @@
 <h1>My Menu</h1>
 
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">Logo</a>
+      <ul class="left hide-on-med-and-down">
+        <% @category.each do |cat| %>
+          <li><a>
+            <%= cat.name %>
+         </a></li>
+         <% end %>
+      </ul>
+    </div>
+  </nav>
+
+
+
 <ul>
  <% @category.each do |cat| %>
    <li>
