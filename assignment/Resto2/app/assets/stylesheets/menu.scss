@@ -1,3 +1,43 @@
-// Place all the styles related to the Menu controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  height: 100%;
+}
+h1{
+  text-align: center;
+  font-size: 4em;
+}
+
+h2{
+  text-align:center;
+  font-size: 1.8em;
+}
+
+h3{
+  margin-left: 20px;
+}
+
+.besedwi{
+font-family: 'Sedgwick Ave', cursive;
+}
+
+.bearch{
+  font-family: 'Archivo', sans-serif;
+}
+
+
+
+.card{
+  width: 55%;
+  height: 55%;
+  margin: 15px 15px 15px 15px;
+}
+
+.card-image img{
+  height:200px;
+}
+
+.inline {
+  float: none;
+  display: inline-block;
+  margin-right: -4px;
+}
