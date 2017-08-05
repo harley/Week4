@@ -28,22 +28,38 @@
 <h2>Our Preparations</h2>
 
 <div class="col s3" id="menu">
-    <h3 class="header">Horizontal Card</h3>
+    <h3 class="header">Day's menu</h3>
     <div class="card horizontal">
       <div class="card-image">
-        <img src="<%= asset_path 'avo-egg.jpg' %>">
+        <img src="<%= image_path 'dinner1.jpg' %>">
       </div>
       <div class="card-stacked">
         <div class="card-content">
           <p>I am a very simple card. I am good at containing small bits of information.</p>
         </div>
         <div class="card-action">
-          <a><%= link_to "Menu" ,menu_path %></a>
+          <a><%= link_to "Take a look" ,menu_path %></a>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="col s3">
+    <h2 class="header">Day's menu</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="<%= image_path 'lunch1.jpg' %>">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+          <a><%= link_to "Take a look" ,menu_path %></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </section>
 
