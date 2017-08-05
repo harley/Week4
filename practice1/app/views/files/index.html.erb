@@ -1,5 +1,9 @@
 
-<ul>
+<h1><%= link_to "File" ,files_path %></h1>
+
+
+<ul class="files">
+ <li class="file"><%= link_to ".." , file_path(next: @parent) %></li>
  <% @files.each  do |file|  %>
   <li class="file"><%=link_to file, files_path(next: file) %></li>
  <%end%>
