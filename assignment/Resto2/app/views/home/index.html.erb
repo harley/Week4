@@ -1,11 +1,14 @@
-<h1></h1>
 
 
-<div class='responsive-video'>
-  <video autoplay height='720' poster="<%= asset_path 'avo-egg.jpg' %>"  width='1280'>
-      <source src="<%= video_path '/avo-egg/avo-egg.mp4' %>" typ='video/mp4'>
-      <source src="<%= video_path '/avo-egg/avo-egg.webm' %>" typ='video/webm'>
-  </video>
+<div class='video-container'>
+<!--<video autoplay height='720' loop poster="<%= asset_path 'avo-egg.jpg' %>"  width='1280'controls>
+      <source src="<%= video_path '/videos/avo-egg/avo-egg.mp4' %>" typ='video/mp4'>
+     <source src="<%= video_path '/videos/avo-egg/avo-egg.webm' %>" typ='video/webm'> 
+  </video> -->
+
+  <%= video_tag "avo-egg.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
+
+
 </div>
 
   <nav>
@@ -49,7 +52,7 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
+          <p>I am a very simple card. I am good at</br> containing small </br>bits of information.</p>
         </div>
         <div class="card-action">
           <a><%= link_to "Take a look" ,menu_path %></a>
@@ -88,9 +91,8 @@
         <h5 class="white-text">Links</h5>
         <div class"row">
           <ul>
-            <li><a class="grey-text text-lighten-3" href="index.html">Link 1</a></li>
             <i class="material-icons">android</i>
-            <i class="material-icons">android</i>
+            <i class="material-icons">wifi</i>
             <i class="material-icons">android</i>
           </ul>
           </div>

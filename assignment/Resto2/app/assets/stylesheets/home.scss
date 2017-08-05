@@ -24,7 +24,7 @@ font-family: 'Sedgwick Ave', cursive;
 }
 
 .nav-wrapper{
-  margin-top: 140px;
+  margin-top:-50px;
   height: 65px;
 }
 
@@ -43,19 +43,19 @@ font-family: 'Sedgwick Ave', cursive;
 
 
 
-.responsive-video{
+.video-container{
     height: 100%;
     width: 100%;
    /* overflow: hidden;
     position: absolute; */
-    video{
+   video{
         //Cober all the screem
         min-width: 90%;
         min-height: 90%;
        
         //
         width: auto;
-        height: auto;
+        height: auto; 
         
         //Center the video
         position: absolute;
@@ -66,9 +66,19 @@ font-family: 'Sedgwick Ave', cursive;
     }
 }
 
+/*
 
-
-
+.video {
+ position: fixed;
+ top: 50%; left: 50%;
+ z-index: 1;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ transform: translate(-50%, -50%);
+}
+*/
 
 
 
