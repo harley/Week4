@@ -1,17 +1,14 @@
-<h1 class="besedwi">Rest2</h1>
-<p>Fresh Food.... </p>
+<h1></h1>
 
 
-<div class='video-container'>
+<div class='responsive-video'>
   <video autoplay height='720' poster="<%= asset_path 'avo-egg.jpg' %>"  width='1280'>
-
       <source src="<%= video_path '/avo-egg/avo-egg.mp4' %>" typ='video/mp4'>
       <source src="<%= video_path '/avo-egg/avo-egg.webm' %>" typ='video/webm'>
   </video>
 </div>
 
-
-<nav>
+  <nav>
     <div class="nav-wrapper teal lighten-2">
       <a href="#" class="brand-logo"><h3 class="besedwi">Rest2</h3></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down ">
@@ -23,13 +20,13 @@
     </div>
   </nav>
 
-<section class="photos">
+<div class="row photos">
 
 <h2>Our Preparations</h2>
 
-<div class="col s3" id="menu">
-    <h2 class="header">Day's menu</h3>
-    <div class="card horizontal">
+<div class="col s4 inline" id="menu">
+    <h2 class="header"></h3>
+    <div class="card">
       <div class="card-image">
         <img src="<%= image_path 'dinner1.jpg' %>">
       </div>
@@ -44,11 +41,11 @@
     </div>
   </div>
 
-  <div class="col s3">
-    <h2 class="header">Day's menu</h2>
-    <div class="card horizontal">
+  <div class="col s4 inline" id="menu">
+    <h2 class="header"></h2>
+    <div class="card">
       <div class="card-image">
-        <img src="<%= image_path 'lunch1.jpg' %>">
+        <img src="<%= image_path 'lunch5.jpg' %>">
       </div>
       <div class="card-stacked">
         <div class="card-content">
@@ -61,7 +58,24 @@
     </div>
   </div>
 
-</section>
+  <div class="col s4 inline" id="menu">
+    <h2 class="header"></h2>
+    <div class="card">
+      <div class="card-image">
+        <img src="<%= image_path 'back1.jpg' %>">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+          <a><%= link_to "Take a look" ,menu_path %></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <footer class="page-footer teal lighten-2">
    <div class="container">
@@ -72,12 +86,14 @@
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Links</h5>
+        <div class"row">
           <ul>
             <li><a class="grey-text text-lighten-3" href="index.html">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <i class="material-icons">android</i>
+            <i class="material-icons">android</i>
+            <i class="material-icons">android</i>
           </ul>
+          </div>
       </div>
     </div>
    </div>

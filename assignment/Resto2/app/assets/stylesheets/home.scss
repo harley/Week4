@@ -23,17 +23,35 @@ font-family: 'Sedgwick Ave', cursive;
   font-family: 'Archivo', sans-serif;
 }
 
-/*
+.nav-wrapper{
+  margin-top: 140px;
+  height: 65px;
+}
 
-.video-container{
+
+.card{
+  width: 55%;
+  height: 55%;
+  margin: 15px 15px 15px 15px;
+}
+
+.inline {
+  float: none;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+
+
+.responsive-video{
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    position: absolute;
+   /* overflow: hidden;
+    position: absolute; */
     video{
         //Cober all the screem
-        min-width: 100%;
-        min-height: 100%;
+        min-width: 90%;
+        min-height: 90%;
        
         //
         width: auto;
@@ -48,7 +66,6 @@ font-family: 'Sedgwick Ave', cursive;
     }
 }
 
-*/
 
 
 
