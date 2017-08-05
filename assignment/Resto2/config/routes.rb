@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  
   resources :photos
-
+  
+  
   root "home#index"
   
+  get 'contact' => "contact#index"
   get 'menu' => "menu#index"
   get 'cart' => "cart#index"
 
