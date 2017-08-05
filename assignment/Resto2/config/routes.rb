@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   
   root "home#index"
   
-  get 'menu' => 'menu#index'
-  get 'index' => "cart#index"
+  get 'menu' => "menu#index"
+  get 'cart' => "cart#index"
 
   
   
