@@ -28,10 +28,11 @@
 
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
-        <% @category.each do |cat| %>
-        <li class="tab"><a href="#">
-          <%= cat.name %>
-        </a></li>
+        <% @category.each do |category| %>
+        <li class="tab">
+         <%= link_to(category.name , menu_path(category:category.name),
+              class:"#{'active' if params[:category] == category.name}") %>
+        </li>
          <% end %>
       </ul>
     </div>
