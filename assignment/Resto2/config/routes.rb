@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  
+  resources :photos
+
   root "home#index"
   
   get 'menu' => "menu#index"

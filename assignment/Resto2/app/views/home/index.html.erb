@@ -1,14 +1,15 @@
 <h1 class="besedwi">Rest2</h1>
 <p>Fresh Food.... </p>
 
-<section class="video">
+
 <div class='video-container'>
-      <video autoplay height='720' loop poster='/videos/avo-egg/avo-egg.jpg' width='1280'>
-        <source src='/videos/avo-egg/avo-egg.mp4' typ='video/mp4'>
-        <source src='/videos/avo-egg/avo-egg.webm' typ='video/webm'>
-      </video>
-    </div>
-</section>
+  <video autoplay height='720' poster="<%= asset_path 'avo-egg.jpg' %>"  width='1280'>
+
+      <source src="<%= video_path '/avo-egg/avo-egg.mp4' %>" typ='video/mp4'>
+      <source src="<%= video_path '/avo-egg/avo-egg.webm' %>" typ='video/webm'>
+  </video>
+</div>
+
 
 <nav>
     <div class="nav-wrapper teal lighten-2">
@@ -30,7 +31,7 @@
     <h3 class="header">Horizontal Card</h3>
     <div class="card horizontal">
       <div class="card-image">
-        <img src="https://lorempixel.com/100/190/nature/6">
+        <img src="<%= asset_path 'avo-egg.jpg' %>">
       </div>
       <div class="card-stacked">
         <div class="card-content">
