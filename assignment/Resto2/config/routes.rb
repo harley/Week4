@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root "home#index"
   
+  get 'home/about' => "home#about"
   get 'contact' => "contact#index"
   get 'menu' => "menu#index"
   get 'cart' => "cart#index"
