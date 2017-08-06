@@ -82,7 +82,16 @@ font-family: 'Sedgwick Ave', cursive;
 }
 
 .upTo{
-  margin-top: -150px;
+  z-index: 5;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 65px;
 }
 
+.under{
+  position: relative;
+}
 
+.about{
+  color:green;
+}

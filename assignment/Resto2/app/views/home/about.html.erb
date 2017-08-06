@@ -5,16 +5,22 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down ">
         <li><a><%= link_to "Home" , root_path %></a></li>
 
-        <li><a href="badges.html">About</a></li>
         <li><a><%= link_to "Menu" , menu_path %></a></li>
+        <li><a><%= link_to "Find us" , contact_path %></a></li>
       </ul>
     </div>
   </nav>
 
-
-<div class='video-container'>
-  <%= video_tag "The_Cucumber.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
+  <div class="row upTo">
+  <div class="col s4 push-s2 card-panel about">
+    <h3>About us..</h3>
+    <p class="">I am a very simple card. I am good at containing small bits of information</p>
+ </div>
 </div>
 
+
+<div class='video-container under'>
+  <%= video_tag "The_Cucumber.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, class: "video" %>
+</div>
 
 
