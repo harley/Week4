@@ -55,8 +55,6 @@ font-family: 'Sedgwick Ave', cursive;
 .video-container{
     height: 30%;
     width: 100%;
-   /* overflow: hidden;
-    position: absolute; */
    video{
         //Cober all the screem
         min-width: 100%;
@@ -75,10 +73,16 @@ font-family: 'Sedgwick Ave', cursive;
     }
 }
 
+.margTop{
+  margin-top: 30px;
+}
 
+.addr{
+  margin-left: 35px;
+}
 
-
-
-
+.upTo{
+  margin-top: -150px;
+}
 
 
