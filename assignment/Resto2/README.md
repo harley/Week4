@@ -26,14 +26,14 @@ URL: **heroku-app-url**
   * [x] Lunch
   * [x] Dinner
   * [x] Drinks
-* [ ] User should see at least 5 food items in each section.
-* [ ] Each food item should have the following fields:
+* [x] User should see at least 5 food items in each section.
+* [x] Each food item should have the following fields:
   * Name (Canh Chua)
   * Description (Delicious fish soup)
   * Price (VND)
   * Section - Breakfast, Lunch, Dinner, Drinks
   * Image URL - do a google search or use LoremFlickr: http://loremflickr.com/320/240/canhchua
-* [ ] User should be able to filter by section of Breakfast, Lunch, Dinner, or Drinks and see only the relevant items.
+* [x] User should be able to filter by section of Breakfast, Lunch, Dinner, or Drinks and see only the relevant items.
 * [ ] User can sort menu items by “alphabetical”, “price low to high”, and “price high to low”.
 * [ ] User should be able to search for a menu item and see results.
 * [ ] Clicking on an item in the menu brings up its detail, where you see the description and a larger picture.
