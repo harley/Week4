@@ -1,5 +1,9 @@
 class MenuController < ApplicationController
   def index
-    @category = Category.all
+    @sections = Section.all
+    if params[:section]
+      @section = Section.find_by(name:params[:section])
+      @items = @section.items
+    end
   end
 end

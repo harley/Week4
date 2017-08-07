@@ -14,10 +14,10 @@
 
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
-        <% @category.each do |category| %>
+        <% @sections.each do |section| %>
         <li class="tab">
-         <%= link_to(category.name , menu_path(category:category.name),
-              class:"#{'active' if params[:category] == category.name}") %>
+         <%= link_to(section.name , menu_path(section:section.name),
+              class:"#{'active' if params[:section] == section.name}") %>
         </li>
          <% end %>
       </ul>
@@ -27,144 +27,30 @@
 
 
 <div class="row text-center">
-
-<h2>BreakFast</h2>
-
+  <% if @section  %>
+<h2><%= @section.name %></h2>
+ <% @items.each do |item|%>
 <div class="col s3 inline" id="menu">
-    <h2 class="header"></h3>
     <div class="card">
-      <div class="card-image">
+    <h4 class="header"><%= item.name %></h4>
+    <div class="card-image">
         <img src="<%= image_path 'lunch1.jpg' %>">
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
+          <p><%= item.description %></p>
+          <p><%= item.price %></p>
         </div>
         <div class="card-action">
           <a><%= link_to "Add to Cart" ,menu_path %></a>
         </div>
       </div>
-    </div>
   </div>
+</div>  
+<% end %>
 
-<div class="col s3 inline" id="menu">
-    <h2 class="header"></h3>
-    <div class="card">
-      <div class="card-image">
-        <img src="<%= image_path 'lunch2.jpg' %>">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a><%= link_to "Add to Cart" ,menu_path %></a>
-        </div>
-      </div>
-    </div>
-  </div>
+<% end %>
 
-  <div class="col s3 inline" id="menu">
-    <h2 class="header"></h3>
-    <div class="card">
-      <div class="card-image">
-        <img src="<%= image_path 'lunch3.jpg' %>">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a><%= link_to "Add to Cart" ,menu_path %></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col s3 inline" id="menu">
-    <h2 class="header"></h3>
-    <div class="card">
-      <div class="card-image">
-        <img src="<%= image_path 'lunch4.jpg' %>">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a><%= link_to "Add to Cart" ,menu_path %></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col s3 inline" id="menu">
-    <h2 class="header"></h3>
-    <div class="card">
-      <div class="card-image">
-        <img src="<%= image_path 'lunch5.jpg' %>">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a><%= link_to "Add to Cart" ,menu_path %></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col s3 inline" id="menu">
-    <h2 class="header"></h3>
-    <div class="card">
-      <div class="card-image">
-        <img src="<%= image_path 'dinner2.jpg' %>">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a><%= link_to "Add to Cart" ,menu_path %></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col s3 inline" id="menu">
-    <h2 class="header"></h3>
-    <div class="card">
-      <div class="card-image">
-        <img src="<%= image_path 'dinner1.jpg' %>">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a><%= link_to "Add to Cart" ,menu_path %></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col s3 inline" id="menu">
-    <h2 class="header"></h3>
-    <div class="card">
-      <div class="card-image">
-        <img src="<%= image_path 'dinner3.jpg' %>">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a><%= link_to "Add to Cart" ,menu_path %></a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   </div>
   
