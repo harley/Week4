@@ -27,19 +27,19 @@
 
 
 <div class="row text-center">
-  <% if @section  %>
+<% if @section  %>
 <h2><%= @section.name %></h2>
  <% @items.each do |item|%>
 <div class="col s3 inline" id="menu">
     <div class="card">
     <h4 class="header"><%= item.name %></h4>
     <div class="card-image">
-        <img src="<%= image_path 'lunch1.jpg' %>">
+        <%= image_tag(item.image_url) %>
       </div>
       <div class="card-stacked">
         <div class="card-content">
           <p><%= item.description %></p>
-          <p><%= item.price %></p>
+          <p><strong><%= item.price %></strong></p>
         </div>
         <div class="card-action">
           <a><%= link_to "Add to Cart" ,menu_path %></a>

@@ -15,7 +15,9 @@ end
 if Item.count == 0
   Section.all.each do |section|
     4.times do
-      Item.create!(name:Faker::Food.dish,description:Faker::Food.ingredient,price:'20,000',section: section)
+      a = Item.create!(name:Faker::Food.dish,description:Faker::Food.ingredient,price:'20,000',section: section)
+      a.image_url = 'http://loremflickr.com/320/240/' + a.name.to_s
+      a.save!
     end
   end
 end
