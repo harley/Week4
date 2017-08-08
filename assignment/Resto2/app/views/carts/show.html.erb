@@ -9,24 +9,26 @@
   </div>
 </nav>
 
+<%= debug current_cart.id %>
 <table>
         <thead>
           <tr>
-              <th>Name</th>
-              <th>Item Name</th>
-              <th>Item Price</th>
+              <th></th>
+              <th></th>
+              <th></th>
           </tr>
         </thead>
 
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          
-        </tbody>
-      </table>
+        <% current_cart.line_items.each do |line| %>
+        <tr>
+            <td><%= line.item.name %></td>
+            <td><%= line.quantity %></td>
+            <td><%= line.item.price %></td>
+        </tr>
+       <% end %>   
+  </tbody>
+</table>
 
 
 

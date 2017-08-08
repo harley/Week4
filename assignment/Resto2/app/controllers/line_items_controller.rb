@@ -2,7 +2,7 @@ class LineItemsController < ApplicationController
   def create
     @lineitem = LineItem.new(line_item_params)
     if @lineitem.save
-      redirect_to cart_path(@lineitem.cart_id)
+      redirect_to cart_path
     else
       redirect_to :back 
     end

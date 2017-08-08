@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'line_items/create'
+  get 'cart' => 'carts#show'
 
   resources :photos
 
