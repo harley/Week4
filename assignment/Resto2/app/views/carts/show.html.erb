@@ -1,14 +1,32 @@
 <nav>
-    <div class="nav-wrapper teal lighten-2">
-      <a href="#" class="brand-logo"><h3 class="besedwi">Rest2</h3></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down ">
-        <li><a><%= link_to "Menu" , menu_path %></a></li>
+  <div class="nav-wrapper teal lighten-2">
+    <a href="#" class="brand-logo"><h3 class="besedwi">Rest2</h3></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down ">
+      <li><a><%= link_to "Menu" , menu_path %></a></li>
+      <li><a href="/home/about">About us</a></li>
+      <li><a><%= link_to "Find Us" , contact_path %></a></li>
+    </ul>
+  </div>
+</nav>
 
-        <li><a href="/home/about">About us</a></li>
-        <li><a><%= link_to "Find Us" , contact_path %></a></li>
-      </ul>
-    </div>
-  </nav>
+<table>
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          
+        </tbody>
+      </table>
 
 
 
@@ -18,4 +36,4 @@
 
 
 
-  
+
