@@ -41,9 +41,12 @@
           <p><%= item.description %></p>
           <p><strong><%= number_to_currency(item.price) %></strong></p>
         </div>
-        <div class="card-action">
-          <a><%= link_to "Add to Cart" ,cart_path %></a>
-        </div>
+        <%= form_for LineItem.new do |f|%>
+          <%= f.hidden_field :item_id, value: item.id %>
+          <%= f.hidden_field :cart_id, value: current_cart.id %>
+          <%= f.hidden_field :quantity, value: 1 %>
+          <%= f.submit 'add to cart', class: 'btn' %> 
+        <%end%>
       </div>
   </div>
 </div>  

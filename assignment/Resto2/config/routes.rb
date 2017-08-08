@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'line_items/create'
+
   resources :photos
 
   root "home#index"
@@ -6,8 +8,8 @@ Rails.application.routes.draw do
   get 'home/about' => "home#about"
   get 'contact' => "contact#index"
   get 'menu' => "menu#index"
-  get 'cart' => "cart#index"
-
+  resources :carts
+  resources :line_items
   
   
   
