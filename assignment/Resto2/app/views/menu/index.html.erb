@@ -39,7 +39,7 @@
       <div class="card-stacked">
         <div class="card-content">
           <p><%= item.description %></p>
-          <p><strong><%= item.price %></strong></p>
+          <p><strong><%= number_to_currency(item.price) %></strong></p>
         </div>
         <div class="card-action">
           <a><%= link_to "Add to Cart" ,cart_path %></a>
